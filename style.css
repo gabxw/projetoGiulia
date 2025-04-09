@@ -1,12 +1,13 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    height: 100%;
-    background: #000000;
-    color: white;
-    overflow: hidden;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background: #000000;
+  color: white;
+  overflow-x: hidden;
+}
+
   
   body.fundo-romantico {
     background: #000000;
@@ -127,6 +128,27 @@ body, html {
     .player-container iframe {
       width: 90vw;
       height: 80px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #slideshow img {
+      width: 90vw;
+    }
+  
+    #contador {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    #mensagem {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 1.5rem;
+      padding: 0.8rem 1.5rem;
     }
   }
   
